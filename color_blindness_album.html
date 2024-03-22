@@ -1,0 +1,48 @@
+<!-- Inserting color_blindness_media1.jpg into the Color Blindness album -->
+<a href="color_blindness_album.html" style="display: none;"></a>
+
+<!-- JavaScript for Portfolio Sections -->
+<script>
+  // Function to open media album for hallucination
+  function openAlbumHallucination() {
+    // Open the hallucination media album using Lightbox
+    lightbox.option({
+      'albumLabel': '', // Remove the "Image x of x" label
+      'fadeDuration': 300, // Set fade in/out duration
+      'wrapAround': true // Allow looping through images
+    });
+    // Trigger click event on the first image of the album
+    document.getElementById('hallucination-album-link').click();
+  }
+
+  // Function to open media album for color blindness
+  function openAlbumColorBlindness() {
+    // Open the color blindness media album using Lightbox
+    lightbox.option({
+      'albumLabel': '', // Remove the "Image x of x" label
+      'fadeDuration': 300, // Set fade in/out duration
+      'wrapAround': true // Allow looping through images
+    });
+    // Trigger click event on the first image of the album
+    document.getElementById('color_blindness-album-link').click();
+  }
+
+  // Function to open media album for dyslexia
+  function openAlbumDyslexia() {
+    // Open the dyslexia media album using Lightbox
+    lightbox.option({
+      'albumLabel': '', // Remove the "Image x of x" label
+      'fadeDuration': 300, // Set fade in/out duration
+      'wrapAround': true // Allow looping through images
+    });
+    // Trigger click event on the first image of the album
+    document.getElementById('dyslexia-album-link').click();
+  }
+</script>
+
+
+<!-- Lightbox CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+<!-- Lightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>

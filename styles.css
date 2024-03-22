@@ -1,0 +1,102 @@
+body {
+  background: url('background.mp4');
+  background-size: cover;
+  color: #fff;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+.card-title {
+  color: #000;
+}
+/* Mystical Environment Inspired Styles */
+body {
+  overflow: hidden; /* Prevent scrolling */
+}
+
+#video-bg {
+  position: fixed; /* Fixed position to cover the entire viewport */
+  top: 0;
+  left: 0;
+  min-width: 100%; /* Minimum width and height to cover the entire viewport */
+  min-height: 100%;
+  z-index: -1; /* Move the video behind other content */
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+.card-title {
+  color: hsl(0, 0%, 0%);
+}/* Mystical Environment Inspired Styles */
+body {
+  overflow: hidden; /* Prevent scrolling */
+}
+
+#video-bg {
+  position: fixed; /* Fixed position to cover the entire viewport */
+  top: 0;
+  left: 0;
+  min-width: 100%; /* Minimum width and height to cover the entire viewport */
+  min-height: 100%;
+  z-index: -1; /* Move the video behind other content */
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+.card-title {
+  color: #000;
+}
+
+/* Mystical Environment Inspired Styles */
+body {
+  overflow: hidden; /* Prevent scrolling */
+}
+
+#video-bg {
+  position: fixed; /* Fixed position to cover the entire viewport */
+  top: 0;
+  left: 0;
+  min-width: 100%; /* Minimum width and height to cover the entire viewport */
+  min-height: 100%;
+  z-index: -1; /* Move the video behind other content */
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+.card-title {
+  color: #000;
+}
+
+/* Darker text color for better readability */
+h1, p, .navbar-brand, .nav-link {
+  color: #333; /* Darker shade of gray */
+}
+

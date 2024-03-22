@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HowDoesThatFeel</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+<!-- Video Background -->
+<video autoplay muted loop id="video-bg">
+  <source src="background.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">HowDoesThatFeel</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Discover</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Explore Projects</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 style="font-weight: 700; color: #fff;">Welcome to HowDoesThatFeel</h1>
+      <p style="font-weight: 700; color: #f7f7f7ee;">Experience perception of others and discover different perceptions!</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Portfolio Section -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <a href="#" onclick="openAlbumHallucination()">
+          <img src="hallucination.jpg" class="card-img-top" alt="Hallucination POV">
+          <div class="card-body">
+            <h5 class="card-title" onclick="openAlbumHallucination()">Hallucination POV</h5>
+            <p class="card-text">Explore projects related to hallucination.</p>
+          </div>
+        </a>
+      </div>
+      <!-- Hidden links to the media album -->
+      <a id="hallucination-album-link" href="#" data-lightbox="hallucination" style="display: none;"></a>
+      <!-- Insert your media items here -->
+      <a href="hallucination_media1.jpg" data-lightbox="hallucination" style="display: none;"></a>
+      <a href="hallucination_media2.jpg" data-lightbox="hallucination" style="display: none;"></a>
+      <a href="hallucination_media3.jpg" data-lightbox="hallucination" style="display: none;"></a>
+      <a href="hallucination_media4.jpg" data-lightbox="hallucination" style="display: none;"></a>
+      <a href="hallucination_media5.jpg" data-lightbox="hallucination" style="display: none;"></a>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <a href="#" onclick="openAlbumColorBlindness()">
+          <img src="color_blindness.jpg" class="card-img-top" alt="Color Blindness POV">
+          <div class="card-body">
+            <h5 class="card-title">Color Blindness POV</h5>
+            <p class="card-text">Explore projects related to color blindness.</p>
+          </div>
+        </a>
+      </div>
+      <!-- Hidden links to the media album -->
+      <a id="color_blindness-album-link" href="#" data-lightbox="color_blindness" style="display: none;"></a>
+      <!-- Insert your media items here -->
+      <a href="media1.jpg" data-lightbox="color_blindness" style="display: none;"></a>
+      <a href="color_blindness_media2.jpg" data-lightbox="color_blindness" style="display: none;"></a>
+      <a href="color_blindness_media3.jpg" data-lightbox="color_blindness" style="display: none;"></a>
+      <a href="color_blindness_media4.jpg" data-lightbox="color_blindness" style="display: none;"></a>
+      <a href="color_blindness_media5.jpg" data-lightbox="color_blindness" style="display: none;"></a>
+    </div>
+    
+
+    <div class="col-md-4">
+      <div class="card">
+        <a href="#" onclick="openAlbumDyslexia()">
+          <img src="dyslexia.jpg" class="card-img-top" alt="Dyslexia POV">
+          <div class="card-body">
+            <h5 class="card-title">Dyslexia POV</h5>
+            <p class="card-text">Explore projects related to dyslexia.</p>
+          </div>
+        </a>
+      </div>
+      <!-- Hidden links to the media album -->
+      <a id="dyslexia-album-link" href="#" data-lightbox="dyslexia" style="display: none;"></a>
+      <!-- Insert your media items here -->
+      <a href="dyslexia_media1.jpg" data-lightbox="dyslexia" style="display: none;"></a>
+      <a href="dyslexia_media2.jpg" data-lightbox="dyslexia" style="display: none;"></a>
+      <a href="dyslexia_media3.jpg" data-lightbox="dyslexia" style="display: none;"></a>
+      <a href="dyslexia_media4.jpg" data-lightbox="dyslexia" style="display: none;"></a>
+      <a href="dyslexia_media5.jpg" data-lightbox="dyslexia" style="display: none;"></a>
+    </div>
+    
+
+
+
+<!-- Lightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+  <!-- Bootstrap and jQuery JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- JavaScript -->
+<script>
+  // Function to open media album when a card title is clicked
+  function openAlbum(cardType) {
+    // Open the corresponding media album using Lightbox
+    lightbox.option({
+      'albumLabel': '', // Remove the "Image x of x" label
+      'fadeDuration': 300, // Set fade in/out duration
+      'wrapAround': true // Allow looping through images
+    });
+    // Trigger click event on the first image of the album
+    document.getElementById(cardType + '-album-link').click();
+  }
+
+  // Function to open media album for hallucination
+  function openAlbumHallucination() {
+    // Open the hallucination media album using Lightbox
+    lightbox.option({
+      'albumLabel': '', // Remove the "Image x of x" label
+      'fadeDuration': 300, // Set fade in/out duration
+      'wrapAround': true // Allow looping through images
+    });
+    // Trigger click event on the first image of the hallucination album
+    document.getElementById('hallucination-album-link').click();
+  }
+
+  // Function to open media album for color blindness
+  function openAlbumColorBlindness() {
+    // Open the color blindness media album using Lightbox
+    lightbox.option({
+      'albumLabel': '', // Remove the "Image x of x" label
+      'fadeDuration': 300, // Set fade in/out duration
+      'wrapAround': true // Allow looping through images
+    });
+    // Trigger click event on the first image of the color blindness album
+    document.getElementById('color_blindness-album-link').click();
+  }
+
+  // Function to open media album for dyslexia
+  function openAlbumDyslexia() {
+    // Open the dyslexia media album using Lightbox
+    lightbox.option({
+      'albumLabel': '', // Remove the "Image x of x" label
+      'fadeDuration': 300, // Set fade in/out duration
+      'wrapAround': true // Allow looping through images
+    });
+    // Trigger click event on the first image of the dyslexia album
+    document.getElementById('dyslexia-album-link').click();
+  }
+</script>
+
+
+
+</body>
+</html>
