@@ -39,7 +39,7 @@ function getImages(cardType) {
   var images = [];
   // Define the maximum number of media files available for each card type
   var maxMedia = {
-    hallucination: 6,
+    hallucination: 5,
     color_blindness: 7,
     dyslexia: 6
   };
