@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - HowDoesThatFeel</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Video Background -->
+<video autoplay muted loop id="video-bg">
+  <source src="background.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <!-- Replace text with image -->
+    <a class="navbar-brand" href="file.html"><img src="logo.png" alt="HowDoesThatFeel Logo"></a>
+    <!-- End of logo -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="Discover.html">Discover</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container mt-5 py-3" style="background-color: rgb(238, 229, 229);">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">About Us</h1>
+      <p class="lead">At HowDoesThatFeel, we believe in the transformative power of empathy. Our mission is to revolutionize the way individuals perceive and understand the diverse spectrum of human emotions, paving the way for a more empathetic world. Rooted in the profound insights of psychology and propelled by a relentless dedication to societal betterment, we endeavor to foster connections, bridge divides, and inspire profound moments of understanding.</p>
+      <p class="lead">Led by visionary founder Ayberk Ozen, a distinguished scholar and advocate for mental wellness, HowDoesThatFeel stands as a beacon of compassion in a world often marked by indifference. With a deep-seated commitment to unraveling the complexities of human emotions, Ayberk's pioneering work has garnered international acclaim, earning him recognition as a trailblazer in the field of empathy research.</p>
+      <p class="lead">Drawing upon cutting-edge psychological principles and innovative technologies, our platform offers a unique opportunity for individuals to immerse themselves in the rich tapestry of human experiences. Through interactive experiences, thought-provoking content, and immersive simulations, users are invited to step into the shoes of others, gaining invaluable insights into the myriad emotions that shape our collective human experience.</p>
+      <p class="lead">At HowDoesThatFeel, we envision a future where empathy transcends boundaries, uniting us in our shared humanity and propelling us toward a more compassionate and inclusive world. Join us on this journey of discovery, understanding, and empowerment as we strive to make empathy not just a concept, but a way of life.</p>
+      <p class="lead">Together, let's change the world—one empathetic interaction at a time.</p>
+      <p class="text-center">For more information about our founder, Ayberk Ozen, please visit his LinkedIn profile: <a href="https://www.linkedin.com/in/ayberkozen/">Ayberk Ozen - LinkedIn</a>.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap and jQuery JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  // Add an event listener to the "HowDoesThatFeel" text
+  document.querySelector(".navbar-brand").addEventListener("click", function() {
+    // Redirect to the main page (file.html)
+    window.location.href = "file.html";
+  });
+</script>
+
+</body>
+</html>

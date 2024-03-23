@@ -4,6 +4,11 @@ body {
   color: #fff;
 }
 
+.white-text {
+  color: white;
+}
+
+
 .navbar {
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -100,3 +105,127 @@ h1, p, .navbar-brand, .nav-link {
   color: #333; /* Darker shade of gray */
 }
 
+/* CSS for modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%; /* Adjust the width to your preference */
+  max-width: 800px; /* Set a maximum width */
+  transition: opacity 1s ease; /* Smooth transition */
+  overflow: auto
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  transition: opacity 1s ease; /* Smooth transition */
+}
+
+/* Show the first slide by default */
+.mySlides:first-child {
+  display: block;
+}
+
+/* Navigation buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px; /* Adjust the margin-top to center the buttons vertically */
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Change background color on hover */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* DONATE NOW Banner CSS */
+.donate-banner {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff0000; /* Red background color */
+  padding: 20px; /* Increase padding for a bigger banner */
+  border-radius: 10px; /* Increase border radius for rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+  z-index: 1000; /* Ensure the banner is above other elements */
+}
+
+.donate-link {
+  color: #ffffff; /* White text color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.donate-link:hover {
+  text-decoration: underline; /* Underline text on hover */
+}
+
+/* Footer CSS */
+.footer {
+  text-align: right; /* Align text to the right */
+  margin-right: 20px; /* Add margin for spacing */
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.footer-text {
+  font-weight: bold;
+}
+
+.donate-banner {
+  position: absolute;
+  bottom: 150px;
+  right: -500px;
+}
